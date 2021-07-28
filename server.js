@@ -13,7 +13,7 @@ app.use(express.json());
 app.use(cors());
 
 //MONGODB ATLAS CONNECTION STRING
-mongoose.connect(MONGODB_URI);
+mongoose.connect(process.env.MONGODB_URI);
 
 //MONGOOSE SCHEMA
 const projectSchema = {
