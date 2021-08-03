@@ -1,3 +1,4 @@
+import React from 'react'
 import {useState, useEffect} from 'react'
 
 import './App.css';
@@ -10,7 +11,8 @@ function App() {
       description: " ",
       technologies: [ ],
       heroku: " ",
-      github: " "
+      github: " ",
+      image: " "
     }
   ])
   //fetch the data from the route and return a json
@@ -33,6 +35,7 @@ function App() {
             <p>{project.description}</p>
             <p>{project.heroku}</p>
             <p>{project.github}</p>
+            <img src={project.image}/>
             <list>Technologies: <li>{project.technologies[0]}</li></list>
           </div>
         

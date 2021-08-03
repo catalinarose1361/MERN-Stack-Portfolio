@@ -22,6 +22,7 @@ const projectSchema = {
     technologies: Array,
     heroku: String,
     github: String,
+    image: String
 }
 
 //SETTING MONGOOSE MODEL
