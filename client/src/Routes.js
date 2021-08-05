@@ -8,17 +8,19 @@ import Portfolio from "./pages/Portfolio";
 
 import TitlePage from './pages/TitlePage';
 
+import MainCont from './components/MainCont'
+
 const Routes = () => (
   
     <Switch>
 
-        <Route exact path ="/about" component={About} />
+        
 
-        <Route exact path ="/portfolio" component={Portfolio} />
+        <Route exact path ="/main" component={MainCont} />
 
         <Route exact path ="/" component={TitlePage}  />
 
-        <Route component={TitlePage}  />
+        <Route component={MainCont}  />
 
     </Switch>
    

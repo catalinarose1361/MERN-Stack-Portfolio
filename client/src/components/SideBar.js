@@ -8,7 +8,7 @@ function SideBar () {
 
     return (
 
-        <Sidebar background="brand" round="small"
+        <Sidebar background="brand" 
 
             header={
 

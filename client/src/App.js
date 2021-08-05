@@ -1,10 +1,12 @@
 import React from "react";
 
-// import Routes from "./Routes.js";
+import Routes from "./Routes.js";
+import { BrowserRouter as Router, withRouter } from "react-router-dom"
+import  { Grommet, Sidebar, Main, Carousel, Grid, Box, InfiniteScroll, Text } from 'grommet';
 
-import  { Grommet, Sidebar, Main, Carousel, Grid } from 'grommet'
+import SideBar from './components/SideBar';
 
-import SideBar from './components/SideBar'
+import MainCont from './components/MainCont';
 
 import About from './pages/About';
 
@@ -15,9 +17,10 @@ import Portfolio from './pages/Portfolio';
 // import FooterComp from "./components/FooterComp"
 
 import './App.css';
+import TitlePage from "./pages/TitlePage";
 
 
-function App() {
+const App = ({ location }) => {
   
   return (
 
@@ -32,7 +35,9 @@ function App() {
       }}
   
     >
-      <Grid
+       <Routes />
+      
+      {/* <Grid
         rows={['xxsmall', 'xsmall']}
         columns={['xsmall', 'small']}
         gap="small"
@@ -42,37 +47,26 @@ function App() {
           { name: 'main', start: [1, 0], end: [1, 0] },
         ]}
       >
- 
-        <SideBar gridArea="nav" />
-        <Main gridArea="main" pad="large">
-
-          <Carousel fill>
-
-            <About />
-            <Portfolio />
-
-          </Carousel>
-
-        </Main>
-</Grid>
-
+        {/* {location.pathname !== '/' &&  <SideBar gridArea="nav" /> } */}
+        {/* <SideBar gridArea="nav" /> */}
+        {/* {location.pathname === '/' && <TitlePage />} */}
      
-
-        
-
-  
-        
-
-   
        
       
 
-     
+        {/* <Carousel gridArea="main"  fill> */}
+
+          {/* <About /> */}
+
+          {/* <Portfolio /> */}
+
+        {/* </Carousel> */}
+
+      {/* </Grid> */} 
 
     </Grommet>
 
   );
 
 }
-
-export default App;
+export default withRouter(App);

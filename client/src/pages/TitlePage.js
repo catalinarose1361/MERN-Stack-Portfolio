@@ -1,6 +1,8 @@
 import React from 'react';
 
-const logoUrl = "https://lh3.googleusercontent.com/ImRVmmSUghlCHAIOfco-GY2zLxTYqRMjziyhcpzTSy4ET4wwQNB2hJe_-KawFEH7E3mRF0wszCjVgPMSlorBCKD8kb_x4GJYiuwkEZYcUahHe0Rjaj84-JxkHuqw-Bl19BuW0W0k3xFS5WVeKOM6SqIjDBqjSB2X_xnmz9id0u5gr4s5yj19w4ev9QzEOufQiNdTR7tM9kX0Y9i387uAypaUT3uDSd1p_TB676WMOViLsE9Ih0cdmeNqaRF_TDCo7b68hR1lqGRR4CFiaL3XtjVQHcurZ8EpLF-A8jHpmBHE6EJOPoxGInMB4SnKDU_XXwiA8uArZ5EnHftwXm9t-c7A6MjJnnKQwB7N8zau8nBgd4BC_pWTT1Y0bJMB1zG1FjpuXU-gQNyZBZnow0-wYVlKhyWO4T1DT5QOgKu82ReNPwf-Jw705PGTImJeJGK2HpuL4oyjyb0b-RifcyFZlUCUiR_F7ItMrXU_CCNphSB_W-uDzud-VW8OhQrSFE8TshyVOt-SRB4JG4EGuq4K-rty96-ovY7AcrDyn0BERCBmAPNRevWXouLCK4LWgV4EmEMNWPNZd69NtOn2sxCtKM9QjpIm6vvzjRkznUKZo7XyjbM0WHTh_TFUKHETyT8fr7_0jWgBIoh4azEIfF1UBv5Y9KdHz4YGkETbmFUtMafBEEFQ6wvtAI1rxL74CAeqfjZTbsmkhdVAelve0yPyoq4=w3400-h2089-no?authuser=3"
+
+import  { Grommet, Sidebar, Main, Carousel, Grid, Box, Image} from 'grommet';
+
 
 // THIS PAGE RENDERS AT THE ROOT DIRECTORY "/"
 const TitlePage = () => {
@@ -8,23 +10,12 @@ const TitlePage = () => {
     return (
 
       
-        <div 
-
-            id="background" 
-
-            style={{
-
-                backgroundColor:'#530EF0', 
-
-                backgroundImage: `url(${logoUrl})`, 
-
-                textAlign:'center'
-
-            }}
-
-        >
-         
-        </div>
+        <Box basis="auto">
+        <Image
+          fit="center"
+          src="https://lh3.googleusercontent.com/ifGDQTpX3pwbGCNZAfOoCY3B8rTxdWLG4UNcr3L1Zgk4stDyFtYFraRWZH0reCcAVKr_-S7wNZBa4KIrkGCTYowe58AptvLvdMPfY7_ztflUQk6AU-PXzg_ZfRGeZjkTy58MIbLzNbuJh7qkoHbKNFSzlaJo4Z2IRn3Y5XI4L0MRgsXbFl8Me4KX6ckoYFv-6-YZ01i5e4kbh9pkrXl7FoFP_Bg_1_YF-06yfKDsar4wFyVu5nLj3gKsgF8YmnokPrbjsKlLdK-L67_0GF0h8xY-ddmy7RLhuQ0bvCqRSxoeY7Bk7LmfKXaevDLbBaA-7wBHVOde1XN6L5hyXAq3VgjVxNjXluwAdpsViI8tC_BSpfcIqiWzuCkgZYAeBif8c_9QwYqusFlUsWztecrUtzhccL2S-bgNzWjDNzRuGzBNvTGwxunDidkfodxLcfKfvxkvWxboTY5E3VT-SzIFihckA19CyLF8X5jMLsdKFv0_uYEZwsMfIwqqbxb5mis88A-QbgCS7LNm60f5qADtdSy21iBaBR8Zli-K5dceB0s7VoEywfbhJFG5kBdqmNtp-3KfBC9cF--2licNc-vPT40CeyMcuUyFIuwfZlFELw_OAZm6AKAjEZdgmaI4lnxqZzPe_fDumDFQmeOV84QXcDbNy54w_rfvP3nb6ez2MrNxZBwj22ASM4qtPlXqCo6-a0mzTaF4OMdUjRd8GC6FMag=w3400-h2089-no?authuser=3"
+        />
+      </Box>
        
     );
 }
