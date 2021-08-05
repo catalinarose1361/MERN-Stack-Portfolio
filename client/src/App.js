@@ -2,9 +2,11 @@ import React from "react";
 
 import Routes from "./Routes.js";
 
-import NavBar from "./components/NavTabs"
+import  { Grommet } from 'grommet'
 
-import FooterComp from "./components/FooterComp"
+// import NavBar from "./components/NavTabs"
+
+// import FooterComp from "./components/FooterComp"
 
 import './App.css';
 
@@ -12,15 +14,21 @@ function App() {
   
   return (
 
-    <>
+    <Grommet
 
-      <NavBar />
+      theme={{ global: { 
+
+        colors: { doc: '#ff99cc' } 
+
+        }
+
+      }}
+  
+    >
 
       <Routes />
 
-      <FooterComp />
-
-    </>
+    </Grommet>
 
   );
 

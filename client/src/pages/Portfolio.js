@@ -2,21 +2,7 @@ import React from 'react';
 
 import {useState, useEffect} from 'react';
 
-import { CaretRightOutlined, GithubOutlined, DesktopOutlined } from '@ant-design/icons';
-
-import Projects from '../components/Projects';
-
-import { List, Button, Collapse, Card, Carousel, Col, Row } from 'antd';
-
-const { Meta } = Card;
-
-const { Panel } = Collapse;
-
-function onChange(a, b, c) {
-
-    console.log(a, b, c);
-
-}
+import { Collapse, Card } from 'antd';
 
 const Portfolio = () => {
 
@@ -47,6 +33,7 @@ const Portfolio = () => {
         fetch('/projects').then(res => {
 
             if(res.ok) {
+
                 console.log(res.json)
 
                 return res.json()
@@ -62,24 +49,44 @@ const Portfolio = () => {
 
         <div id="portfolioDiv" >
 
-     
-
-
             {projects.map(project => {
-        return (
-          <div>
-            <h1>{project.title}</h1>
-            <p>{project.description}</p>
-            <p>{project.heroku}</p>
-            <p>{project.github}</p>
-            <img src={project.image}/>
-            <list>Technologies: <li>{project.technologies[0]}</li></list>
-          </div>
+
+                return (
+
+                    <div>
+
+                        <h1>{project.title}</h1>
+
+                        <p>{project.description}</p>
+
+                        <p>{project.heroku}</p>
+
+                        <p>{project.github}</p>
+
+                        <img src={project.image}/>
+
+                        <list>
+                            
+                            Technologies:
+
+                            <li>
+
+                                {project.technologies[0]}
+
+                            </li>
+
+                        </list>
+
+                    </div>
         
-        )
-      })}
+                )
+
+            })}
+
         </div>
+
     )
+    
 }
 
 export default Portfolio;
