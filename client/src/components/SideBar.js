@@ -2,35 +2,31 @@ import React from 'react';
 
 import  { Sidebar, Avatar, Button, Nav } from 'grommet';
 
-import { Gem } from 'grommet-icons';
+import { DownloadOption, Linkedin, StackOverflow, Github, Mail } from 'grommet-icons';
 
 function SideBar () {
 
     return (
 
-        <Sidebar background="brand" 
+        <Sidebar gap="large" height="min: '100%'"
 
-            header={
+            
 
-                <Avatar src="//s.gravatar.com/avatar/b7fb138d53ba0f573212ccce38a7c43b?s=80" />
+          
 
-            }
+            
 
-            footer={
-
-                <Button 
-
-                    icon={<Gem />} 
-
-                    hoverIndicator
-
-                />
-            }
+         
         >
-            <Nav gap="small">
-    <Button icon={<Gem />} hoverIndicator />
-    <Button icon={<Gem />} hoverIndicator />
-  </Nav>
+            <Nav>
+                <Avatar src="https://photos.app.goo.gl/GPwLXWjogqT2fgvZ7" />
+            <Linkedin />
+         <Github />
+         <Mail />
+         <StackOverflow />
+         <DownloadOption />
+            </Nav>
+       
 
         </Sidebar>
 
