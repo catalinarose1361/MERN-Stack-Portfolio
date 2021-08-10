@@ -20,13 +20,13 @@ function MainCont () {
 
     <Row justify="center">
 
-      <Col span={4}>
+      <Col span={3}>
 
         <SideBar/>
 
       </Col>
 
-      <Col span={20}>
+      <Col span={21}>
 
         <Carousel>
 
