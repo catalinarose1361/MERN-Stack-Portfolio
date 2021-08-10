@@ -49,11 +49,8 @@ const Portfolio = () => {
 
     return (
 
-        <Box
-  direction="row"
-  border={{ color: 'brand', size: 'large' }}
-  pad="medium"
->
+       
+        <>
 
             {projects.map(project => {
 
@@ -61,41 +58,69 @@ const Portfolio = () => {
 
                     <>
 
-<Card  height="large" width="medium" background={<img src={project.image}/>}>
-  <CardHeader pad="medium">{project.title}</CardHeader>
-  <CardBody pad="medium">{project.description}</CardBody>
-  <CardFooter pad={{horizontal: "small"}} background="light-2">
-    <Button
-    href={project.heroku}
-    icon={<Github color="red" />}
-    hoverIndicator
-    />
-    <Reactjs />
-    <Button href={project.github} icon={<Heroku color="plain" />} hoverIndicator />
-  </CardFooter>
-</Card>
+                        <Card  
 
-                        {/* <h1>{project.title}</h1>
+                            height="large" 
 
-                        <p>{project.description}</p>
+                            width="medium" 
 
-                        <p>{project.heroku}</p>
+                            background={
 
-                        <p>{project.github}</p>
+                                <img src={project.image} />
 
-                        <img src={project.image}/>
+                            }
 
-                        <list>
+                        >
+
+                            <CardHeader 
                             
-                            Technologies:
+                                pad="medium">
 
-                            <li>
+                                {project.title}
 
-                                {project.technologies[0]}
+                            </CardHeader>
 
-                            </li>
+                            <CardBody 
+                            
+                                pad="medium">
 
-                        </list> */}
+                                {project.description}
+
+                            </CardBody>
+
+                            <CardFooter 
+
+                                pad={{horizontal: "small"}} 
+
+                                background="light-2"
+
+                            >
+
+                                <Button
+
+                                    href={project.heroku}
+
+                                    icon={<Github color="red" />}
+
+                                    hoverIndicator
+
+                                />
+
+                                <Reactjs />
+
+                                <Button 
+
+                                    href={project.github} 
+
+                                    icon={<Heroku color="plain" />} 
+
+                                    hoverIndicator 
+                                    
+                                />
+
+                            </CardFooter>
+
+                        </Card>
 
                     </>
         
@@ -103,8 +128,7 @@ const Portfolio = () => {
 
             })}
 
-        </Box>
-
+        </>
     )
     
 }
