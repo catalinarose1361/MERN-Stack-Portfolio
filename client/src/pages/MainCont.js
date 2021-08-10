@@ -1,11 +1,11 @@
 import React from "react";
 
-import  { Grommet, Sidebar, Main, Carousel, Grid } from 'grommet';
+import  { Carousel, Grid } from 'grommet';
 import SideBar from '../components/SideBar';
-import About from '../pages/About';
-import Skills from '../pages/Skills'
-import Portfolio from '../pages/Portfolio';
-
+import About from '../components/About';
+import Skills from '../components/Skills'
+import Portfolio from '../components/Portfolio';
+import Education from '../components/Education'
 function MainCont () {
     return (
 
@@ -19,9 +19,9 @@ function MainCont () {
           { name: 'main', start: [1, 0], end: [1, 0] },
         ]}
       >
-        {/* {location.pathname !== '/' &&  <SideBar gridArea="nav" /> } */}
+        
         <SideBar gridArea="nav" />
-        {/* {location.pathname === '/' && <TitlePage />} */}
+        
      
        
       
@@ -33,6 +33,7 @@ function MainCont () {
           <Portfolio />
 
           <Skills />
+          <Education />
 
         </Carousel>
 

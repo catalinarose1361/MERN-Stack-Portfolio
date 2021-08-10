@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 
-import  { Grommet, Sidebar, Main, Carousel, Grid, Box, Image, Button} from 'grommet';
+import  { Box, Image, Button} from 'grommet';
 
 
 // THIS PAGE RENDERS AT THE ROOT DIRECTORY "/"
