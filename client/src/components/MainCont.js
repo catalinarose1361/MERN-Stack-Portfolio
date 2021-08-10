@@ -3,7 +3,7 @@ import React from "react";
 import  { Grommet, Sidebar, Main, Carousel, Grid } from 'grommet';
 import SideBar from '../components/SideBar';
 import About from '../pages/About';
-
+import Skills from '../pages/Skills'
 import Portfolio from '../pages/Portfolio';
 
 function MainCont () {
@@ -31,6 +31,8 @@ function MainCont () {
           <About />
 
           <Portfolio />
+
+          <Skills />
 
         </Carousel>
 
