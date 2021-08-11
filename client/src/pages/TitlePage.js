@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 
 import  { Button} from 'grommet'
 
+import { Css3, Heroku, Html5, Js, Mysql, Node, Npm, Next } from 'grommet-icons';
+
 import logo from '../images/dark_logo_white_background.jpg';
 
 // THIS PAGE RENDERS AT THE ROOT DIRECTORY "/"
@@ -24,7 +26,7 @@ const TitlePage = () => {
 
             <Link to="/main">
 
-                <Button primary label="continue" />
+                <Next  />
    
             </Link>
 

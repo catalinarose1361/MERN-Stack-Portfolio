@@ -1,6 +1,6 @@
 import React from "react";
 
-import  { Carousel} from 'grommet';
+import  { Carousel, InfiniteScroll} from 'grommet';
 
 import SideBar from '../components/SideBar';
 
@@ -27,16 +27,16 @@ function MainCont () {
       </Col>
 
       <Col span={21}>
+      
+        <Carousel play={10000}  fill> 
 
-        <Carousel>
-
-          <About />
+           <About />
 
           <Portfolio />
 
           <Skills />
 
-          <Education />
+          <Education /> 
 
         </Carousel>
 

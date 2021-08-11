@@ -32,9 +32,7 @@ const projectSchema = {
 
     heroku: String,
 
-    github: String,
-
-    image: String
+    github: String
 
 }
 

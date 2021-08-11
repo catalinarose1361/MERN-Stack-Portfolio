@@ -15,7 +15,7 @@ const About = () => {
 
         <>
 
-            <Row>
+            <Row justify="center">
 
                 <Heading>
 

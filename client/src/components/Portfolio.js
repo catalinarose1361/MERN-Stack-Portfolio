@@ -2,9 +2,11 @@ import React from 'react';
 
 import {useState, useEffect} from 'react';
 
-import  { Card, CardHeader, CardBody, CardFooter, Button, Box } from 'grommet';
+import  { Card, CardHeader, CardBody, CardFooter, Button, Heading } from 'grommet';
 
 import { Reactjs, Heroku, Github } from 'grommet-icons';
+
+import {Row, Col,  } from 'antd';
 
 const Portfolio = () => {
 
@@ -21,9 +23,7 @@ const Portfolio = () => {
 
             heroku: " ",
 
-            github: " ",
-
-            image: " "
+            github: " "
 
         }
 
@@ -48,15 +48,20 @@ const Portfolio = () => {
     })
 
     return (
-
-       
         <>
+        <Row justify="center">
+
+            <Heading margin="none">Personal Projects</Heading>
+
+        </Row>
+
+        <Row>
 
             {projects.map(project => {
 
                 return (
 
-                    <>
+                    <Col>
 
                         <Card  
 
@@ -64,11 +69,11 @@ const Portfolio = () => {
 
                             width="medium" 
 
-                            background={
+                            // background={
 
-                                <img src={project.image} />
+                            //     <img src={} />
 
-                            }
+                            // }
 
                         >
 
@@ -122,15 +127,16 @@ const Portfolio = () => {
 
                         </Card>
 
-                    </>
+                    </Col>
         
                 )
 
             })}
 
+        </Row>
         </>
     )
-    
+
 }
 
 export default Portfolio;
