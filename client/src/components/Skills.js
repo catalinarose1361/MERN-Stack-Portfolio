@@ -1,12 +1,87 @@
 import React from 'react';
-
+import {useState, useEffect} from 'react';
 import  { Heading, Text } from 'grommet';
 
-import { Css3, Heroku, Html5, Js, Mysql, Node, Npm, Reactjs } from 'grommet-icons';
-
-import {Row, Col,  } from 'antd';
+import { Grommet, Stripe } from 'grommet-icons';
+import { AntDesignOutlined } from '@ant-design/icons';
+import {Row, Col } from 'antd';
 
 const Skills = () => {
+
+    const [skills, setSkills] = useState([
+
+            // MONGODB
+            "https://img.icons8.com/color/96/000000/mongodb.png",
+
+
+            //github
+            "https://img.icons8.com/color-glass/100/000000/github.png",
+
+
+            //JavaScript
+           "https://img.icons8.com/color/100/000000/javascript--v1.png",
+
+             //HTML5
+             "https://img.icons8.com/color/96/000000/html-5--v2.png",
+
+             //JSON
+             "https://img.icons8.com/nolan/96/json.png",
+
+             //VISUAL STUDIO CODE
+             "https://img.icons8.com/color/90/000000/visual-studio-code-2019.png",
+
+             //APIS
+             "https://img.icons8.com/color-glass/96/000000/api-settings.png",
+
+             //GIT
+             "https://img.icons8.com/color/100/000000/git.png",
+
+             //TYPESCRIPT
+             "https://img.icons8.com/color/100/000000/typescript.png",
+
+             //SASS
+             "https://img.icons8.com/color/100/000000/sass-avatar.png",
+
+             //CSS3
+            "https://img.icons8.com/color/90/000000/css3.png",
+
+            //JQUERY
+            "https://img.icons8.com/ios-filled/100/000000/jquery.png",
+
+            //NODE.JS
+            "https://img.icons8.com/color/96/000000/nodejs.png",
+
+            //REACT
+            "https://img.icons8.com/color/100/000000/react-native.png",
+
+            //HEROKU
+            "https://img.icons8.com/color/96/000000/heroku.png",
+
+            //MYSQL
+            "https://img.icons8.com/fluency/96/000000/mysql-logo.png",
+
+            //REDUX
+            "https://img.icons8.com/color/100/000000/redux.png",
+
+            //BOOTSTRAP
+            "https://img.icons8.com/color/96/000000/bootstrap.png",
+
+            //POSTMAN
+            "https://img.icons8.com/dusk/100/000000/postman-api.png",
+
+            //NPM 
+            "https://img.icons8.com/color/100/000000/npm.png",
+
+            //LESS
+            "https://img.icons8.com/windows/96/000000/less-logo.png"
+
+          
+
+         
+
+        
+
+    ])
 
     return (
 
@@ -34,63 +109,28 @@ const Skills = () => {
 
             <Row justify="center">
 
-                <Col span={8}>
+            {skills.map(function(skill, index){
+                    return <Col span={8}>
+                    <img key={ index } src={skill} />
 
-                    <Mysql size='large'  />
+                    </Col>;
+                  })}
 
-                </Col>
+        </Row>
+        <Row>
+            <Col span={8}>
+            <AntDesignOutlined style={{ fontSize: '100px' }}/>
+            </Col>
+            
+            <Col span={8}>
+            <Grommet color="brand" size="100px" />
+            </Col>
+            <Col span={8}>
+                <Stripe size="100px" />
+            </Col>
+        </Row>
 
-                <Col span={8}>
-
-                    <Node size='large'  />
-
-                </Col>
-
-                <Col span={8}>
-
-                    <Npm size='large'  />
-
-                </Col>
-
-            </Row>
-
-            <Row justify="center">
-
-                <Col span={8}>
-
-                    <Reactjs size='large'  />
-
-                </Col>
-
-                <Col span={8}>
-
-                    <Css3 size='large'  />
-
-                </Col>
-
-                <Col span={8}>
-
-                    <Heroku size='large'  />
-
-                </Col>
-
-            </Row>
-
-            <Row justify="center">
-
-                <Col span={12}>
-
-                    <Html5 size='large'  />
-
-                </Col>
-
-                <Col span={12}>
-
-                    <Js size='large'  />
-
-                </Col>
-          
-            </Row>
+            
             
         </>
         
