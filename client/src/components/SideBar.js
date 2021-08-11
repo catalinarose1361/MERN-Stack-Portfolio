@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import  { Sidebar, Avatar, Nav, Anchor, Tip } from 'grommet';
 
@@ -10,10 +10,16 @@ import resume from "../documents/Catalina's Resume.pdf"
 
 import certification from '../documents/certificate.pdf'
 
+
+import { Affix, Button } from 'antd';
 function SideBar () {
+    const [top, setTop] = useState(10);
+  
 
     return (
-
+        <Affix offsetTop={top}>
+     
+      
       
         <Sidebar gap="large" height="min: '100%'">
 
@@ -166,6 +172,7 @@ function SideBar () {
             </Nav>
 
         </Sidebar>
+        </Affix>
     )
 
 }
