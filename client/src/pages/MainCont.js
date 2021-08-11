@@ -32,11 +32,11 @@ function MainCont () {
 
            <About />
 
-          <Portfolio />
-
           <Skills />
 
           <Education /> 
+
+          <Portfolio />
 
         </Carousel>
 
