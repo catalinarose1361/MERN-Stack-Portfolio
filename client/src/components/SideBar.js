@@ -15,7 +15,7 @@ import { Affix, Button } from 'antd';
 function SideBar () {
     const [top, setTop] = useState(10);
   
-
+   
     return (
         <Affix offsetTop={top}>
      
@@ -28,7 +28,7 @@ function SideBar () {
                 <Avatar size="large" src={avatarPic} />
 
                 {/* LINKEDIN PROFILE */}
-                <Tip content="LinkedIn Profile">
+                <Tip  dropProps={{ align: { left: 'right' } }} content="LinkedIn Profile">
 
                     <Anchor 
                     
@@ -45,7 +45,7 @@ function SideBar () {
                 </Tip>
 
                 {/* STACK OVERFLOW */}
-                <Tip content="Stack Overflow Profile">
+                <Tip dropProps={{ align: { left: 'right' } }} content="Stack Overflow Profile">
 
                     <Anchor 
                     
@@ -62,7 +62,7 @@ function SideBar () {
                 </Tip>
 
                 {/* GITHUB PROFILE */}
-                <Tip content="Github Profile">
+                <Tip dropProps={{ align: { left: 'right' } }} content="Github Profile">
 
                     <Anchor 
 
@@ -83,7 +83,7 @@ function SideBar () {
                 </Tip>
 
                 {/* EMAIL */}
-                <Tip content="Send Email">
+                <Tip dropProps={{ align: { left: 'right' } }} content="Send Email">
 
                    
                     <Anchor 
@@ -106,7 +106,7 @@ function SideBar () {
                 </Tip>
 
                 {/* DOWNLOAD RESUME */}
-                <Tip content="Professional Resume">
+                <Tip dropProps={{ align: { left: 'right' } }} content="Professional Resume">
             
                     {/* ADD "download" TO END OF ANCHOR TAG TO MAKE DOCUMENT DOWNLOADABLE */}
                     <Anchor
@@ -128,7 +128,7 @@ function SideBar () {
                 </Tip>
 
                 {/* DOWNLOAD CERTIFICATION */}
-                <Tip content="Coding Boot Camp Certification">
+                <Tip dropProps={{ align: { left: 'right' } }} content="Coding Boot Camp Certification">
                 
                     <Anchor 
                     
@@ -149,7 +149,7 @@ function SideBar () {
                 </Tip>
 
                 {/* DIGITAL BUSINESS CARD */}
-                <Tip content="Digital Business Card">
+                <Tip dropProps={{ align: { left: 'right' } }} content="Digital Business Card">
                    
                     <Anchor 
 

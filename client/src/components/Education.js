@@ -1,13 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-import { Certificate, Book, Briefcase } from 'grommet-icons';
+import { Certificate, Book, Briefcase, Close } from 'grommet-icons';
 
-import  {  Heading, Text } from 'grommet';
+import  {  Heading, Text, DropButton, Box, } from 'grommet';
 
-import {Row, Col,  } from 'antd';
+import {Row, Col, Popover, Button  } from 'antd';
 
 
 const Education = () => {
+
+  
+    const content = (
+        <div>
+          <p>Content</p>
+          <p>Content</p>
+        </div>
+      );
+      
+
 
     return (
         <>
@@ -33,8 +43,13 @@ const Education = () => {
             <Row  justify="center">
 
                 <Col>
+                <Popover content={content} trigger="hover" >
+                <Button icon={<Briefcase size="xlarge"/>}/>
+                
+  </Popover>
 
-                    <Briefcase size="xlarge"/>
+                   
+    
 
                 </Col>
 

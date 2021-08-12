@@ -18,17 +18,17 @@ function MainCont () {
 
   return (
 
-    <Row justify="center">
+    <Row gutter={20} justify="center">
 
-      <Col span={3}>
+      <Col span={2}>
 
         <SideBar/>
 
       </Col>
 
-      <Col span={21}>
+      <Col span={22}>
       
-        <Carousel play={10000}  fill> 
+        <Carousel margin="large" play={10000}  fill> 
 
            <About />
 
