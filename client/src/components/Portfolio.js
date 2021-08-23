@@ -6,7 +6,7 @@ import  { Card, CardHeader, CardBody, CardFooter, Button, Heading } from 'gromme
 
 import { Reactjs, Heroku, Github } from 'grommet-icons';
 
-import {Row, Col,  } from 'antd';
+import {Row, Col, Divider  } from 'antd';
 
 const Portfolio = () => {
 
@@ -48,11 +48,13 @@ const Portfolio = () => {
     })
 
     return (
-        <>
+        <div id="projectsdiv">
+        
         <Row justify="center">
-
-            <Heading margin="none">Personal Projects</Heading>
-
+        <Divider>
+        <Heading margin="none">Personal Projects</Heading>
+        </Divider>
+            
         </Row>
 
         <Row>
@@ -134,7 +136,7 @@ const Portfolio = () => {
             })}
 
         </Row>
-        </>
+        </div>
     )
 
 }

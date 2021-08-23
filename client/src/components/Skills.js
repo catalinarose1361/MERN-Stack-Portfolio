@@ -2,13 +2,13 @@ import React from 'react';
 
 import { useState } from 'react';
 
-import  { Heading, Text } from 'grommet';
+import  { Heading, Text, Card } from 'grommet';
 
 import { Grommet, Stripe } from 'grommet-icons';
 
 import { AntDesignOutlined } from '@ant-design/icons';
 
-import {Row, Col } from 'antd';
+import {Row, Col, Divider } from 'antd';
 
 const Skills = () => {
 
@@ -87,11 +87,13 @@ const Skills = () => {
 
     return (
 
-        <>
+        <div id="skillsdiv">
 
             <Row justify="center">
 
-                <Heading margin="none">Skills</Heading>
+            <Divider>
+        <Heading margin="none">Technical Skills</Heading>
+        </Divider>
 
             </Row>
 
@@ -147,7 +149,7 @@ const Skills = () => {
 
             </Row>
             
-        </>
+        </div>
         
     )
 }

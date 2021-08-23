@@ -1,7 +1,7 @@
 import React from 'react';
 
 //ANT DESIGN COMPONENTS IMPORT
-import {  Row, Col } from 'antd';
+import {  Row, Col, Divider } from 'antd';
 
 import  { Card, Heading, Paragraph, CardFooter, Text, CardHeader, CardBody } from 'grommet';
 
@@ -13,15 +13,13 @@ const About = () => {
 
     return (
 
-        <>
+        <div id="biodiv">
 
             <Row justify="center">
 
-                <Heading>
-
-                    Biography
-
-                </Heading>
+            <Divider>
+        <Heading margin="none">Biography</Heading>
+        </Divider>
 
             </Row>
 
@@ -109,7 +107,7 @@ const About = () => {
             </Row>
 
         
-        </>
+        </div>
 
     );
        

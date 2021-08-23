@@ -1,6 +1,8 @@
 import React from "react";
 
-import  { Carousel, InfiniteScroll} from 'grommet';
+// import  { Carousel, InfiniteScroll} from 'grommet';
+
+import { Carousel } from 'antd';
 
 import SideBar from '../components/SideBar';
 
@@ -13,6 +15,8 @@ import Portfolio from '../components/Portfolio';
 import Education from '../components/Education'
 
 import {  Row, Col } from 'antd';
+
+
 
 function MainCont () {
 
@@ -28,17 +32,21 @@ function MainCont () {
 
       <Col span={22}>
       
-        <Carousel margin="large" play={10000}  fill> 
+        {/* <Carousel margin="large" play={10000}  fill>  */}
+        {/* <Carousel autoplay dotPosition="bottom"> */}
+        <About />
 
-           <About />
+<Skills />
 
-          <Skills />
+<Education /> 
 
-          <Education /> 
+<Portfolio />
 
-          <Portfolio />
+        {/* </Carousel> */}
 
-        </Carousel>
+      
+
+        {/* </Carousel> */}
 
       </Col>
 

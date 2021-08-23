@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 
 import { Certificate, Book, Briefcase, Close } from 'grommet-icons';
 
-import  {  Heading, Text, DropButton, Box, } from 'grommet';
+import  {  Heading, Text, DropButton, Box, Card } from 'grommet';
 
-import {Row, Col, Popover, Button  } from 'antd';
+import {Row, Col, Popover, Button, Divider  } from 'antd';
 
 
 const Education = () => {
@@ -20,10 +20,12 @@ const Education = () => {
 
 
     return (
-        <>
+        <div id="educationdiv">
             <Row  justify="center">
 
-                <Heading margin="none">Education</Heading> 
+            <Divider>
+        <Heading margin="none">Education</Heading>
+        </Divider>
 
             </Row>
 
@@ -67,7 +69,7 @@ const Education = () => {
 
             </Row>
 
-        </>  
+        </div>  
 
     )
 

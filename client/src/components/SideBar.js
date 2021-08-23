@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import  { Sidebar, Avatar, Nav, Anchor, Tip } from 'grommet';
+import  { Sidebar, Avatar, Nav, Tip } from 'grommet';
 
 import { DownloadOption, Linkedin, StackOverflow, Github, Mail, ContactInfo } from 'grommet-icons';
 
@@ -9,9 +9,10 @@ import avatarPic from '../images/IMG1.png';
 import resume from "../documents/Catalina's Resume.pdf"
 
 import certification from '../documents/certificate.pdf'
+import { Anchor, Affix } from 'antd';
+const { Link } = Anchor;
 
 
-import { Affix, Button } from 'antd';
 function SideBar () {
     const [top, setTop] = useState(10);
   
@@ -21,20 +22,27 @@ function SideBar () {
      
       
       
-        <Sidebar gap="large" height="min: '100%'">
+        <Sidebar direction="verticle" gap="large" height="min: '100%'">
 
             <Nav>
 
                 <Avatar size="large" src={avatarPic} />
 
+                <Anchor>
+                    <Link href="#biodiv" title="Biography" />
+                    <Link href="#skillsdiv" title="Skills" />
+                    <Link href="#educationdiv" title="Education" />
+                    <Link href="#projectsdiv" title="Projects"/>
+                </Anchor>
+
                 {/* LINKEDIN PROFILE */}
-                <Tip  dropProps={{ align: { left: 'right' } }} content="LinkedIn Profile">
+                {/* <Tip  dropProps={{ align: { left: 'right' } }} content="LinkedIn Profile">
 
                     <Anchor 
                     
                         icon={
 
-                            <Linkedin size="large" /> 
+                            <Linkedin size="medium" /> 
 
                         } 
 
@@ -45,129 +53,129 @@ function SideBar () {
                 </Tip>
 
                 {/* STACK OVERFLOW */}
-                <Tip dropProps={{ align: { left: 'right' } }} content="Stack Overflow Profile">
+                {/* <Tip dropProps={{ align: { left: 'right' } }} content="Stack Overflow Profile"> */}
 
-                    <Anchor 
+                    {/* <Anchor  */}
                     
-                    icon={ 
+                    {/* icon={  */}
 
-                        <StackOverflow size="large" /> 
+                        {/* <StackOverflow size="medium" />  */}
 
-                    } 
+                    {/* }  */}
 
-                    href="https://stackoverflow.com/users/11933391/catalina"  
+                    {/* href="https://stackoverflow.com/users/11933391/catalina"   */}
                     
-                    />
+                    {/* /> */}
 
-                </Tip>
+                {/* </Tip> */}
 
                 {/* GITHUB PROFILE */}
-                <Tip dropProps={{ align: { left: 'right' } }} content="Github Profile">
+                {/* <Tip dropProps={{ align: { left: 'right' } }} content="Github Profile"> */}
 
-                    <Anchor 
+                    {/* <Anchor  */}
 
-                        icon={ 
+                        {/* icon={  */}
 
-                            <Github 
+                            {/* <Github  */}
 
-                                size="large"
+                            {/* size="medium" */}
 
-                            /> 
+                            {/* />  */}
 
-                        } 
+                        {/* }  */}
 
-                        href="https://github.com/catalinarose1361" 
+                        {/* href="https://github.com/catalinarose1361"  */}
 
-                    />
+                    {/* /> */}
 
-                </Tip>
+                {/* </Tip> */}
 
                 {/* EMAIL */}
-                <Tip dropProps={{ align: { left: 'right' } }} content="Send Email">
+                {/* <Tip dropProps={{ align: { left: 'right' } }} content="Send Email"> */}
 
                    
-                    <Anchor 
+                    {/* <Anchor  */}
 
 
-                        icon={ 
+                        {/* icon={  */}
 
-                            <Mail 
+                            {/* <Mail  */}
 
-                                size="large"
+                            {/* size="medium" */}
 
-                            /> 
+                            {/* />  */}
 
-                        } 
+                        {/* }  */}
 
-                        href="mailto:webdevcatalina@gmail.com" 
+                        {/* href="mailto:webdevcatalina@gmail.com"  */}
 
-                    />
+                    {/* /> */}
 
-                </Tip>
+                {/* </Tip> */}
 
                 {/* DOWNLOAD RESUME */}
-                <Tip dropProps={{ align: { left: 'right' } }} content="Professional Resume">
+                {/* <Tip dropProps={{ align: { left: 'right' } }} content="Professional Resume"> */}
             
                     {/* ADD "download" TO END OF ANCHOR TAG TO MAKE DOCUMENT DOWNLOADABLE */}
-                    <Anchor
+                    {/* <Anchor */}
 
-                        icon={ 
+                        {/* icon={  */}
 
-                            <DownloadOption 
+                            {/* <DownloadOption  */}
 
-                                size="large"
+                            {/* size="medium" */}
 
-                            /> 
+                            {/* />  */}
 
-                        } 
+                        {/* }  */}
 
-                        href={resume}
+                        {/* href={resume} */}
 
-                    />
+                    {/* /> */}
 
-                </Tip>
+                {/* </Tip> */}
 
                 {/* DOWNLOAD CERTIFICATION */}
-                <Tip dropProps={{ align: { left: 'right' } }} content="Coding Boot Camp Certification">
+                {/* <Tip dropProps={{ align: { left: 'right' } }} content="Coding Boot Camp Certification"> */}
                 
-                    <Anchor 
+                    {/* <Anchor  */}
                     
-                        icon={ 
+                        {/* icon={  */}
+{/*  */}
+                            {/* <DownloadOption  */}
 
-                            <DownloadOption 
+                            {/* size="medium" */}
 
-                                size="large" 
+                            {/* /> */}
 
-                            />
+                        {/* }  */}
 
-                        } 
+                        {/* href={certification} */}
 
-                        href={certification}
+                    {/* /> */}
 
-                    />
-
-                </Tip>
+                {/* </Tip> */}
 
                 {/* DIGITAL BUSINESS CARD */}
-                <Tip dropProps={{ align: { left: 'right' } }} content="Digital Business Card">
+                {/* <Tip dropProps={{ align: { left: 'right' } }} content="Digital Business Card"> */}
                    
-                    <Anchor 
+                    {/* <Anchor  */}
 
-                        icon={ 
+                        {/* icon={  */}
 
-                            <ContactInfo 
+                            {/* <ContactInfo  */}
 
-                                size="large" 
+                            {/* size="medium" */}
 
-                            /> 
+                            {/* />  */}
 
-                        } 
+                        {/* }  */}
 
-                        href="https://mycrd.is/catalina"
+                        {/* href="https://mycrd.is/catalina" */}
 
-                    />   
+                    {/* />    */}
 
-                </Tip>
+                {/* </Tip> */} */}
            
             </Nav>
 
