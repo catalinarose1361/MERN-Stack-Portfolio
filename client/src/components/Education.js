@@ -10,12 +10,7 @@ import {Row, Col, Popover, Button, Divider  } from 'antd';
 const Education = () => {
 
   
-    const content = (
-        <div>
-          <p>Content</p>
-          <p>Content</p>
-        </div>
-      );
+
       
 
 

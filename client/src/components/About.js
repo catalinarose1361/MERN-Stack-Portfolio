@@ -7,7 +7,7 @@ import  { Card, Heading, Paragraph, CardFooter, Text, CardHeader, CardBody } fro
 
 import {  Node, Reactjs } from 'grommet-icons';
 
-import profPic from '../images/IMG_5406.JPG';
+import profPic from '../images/profpic.jpeg';
 
 const About = () => {
 
@@ -82,9 +82,9 @@ const About = () => {
                             {/* CATALINA'S PROFILE PICTURE  */}
                             <img
 
-                                height={700}
+                                height={550}
 
-                                width={800}
+                                width={500}
 
                                 src={profPic}
 
