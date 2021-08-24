@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import  { Sidebar, Avatar, Nav, Tip } from 'grommet';
+import  { Sidebar, Avatar, Nav, Tip, ResponsiveContext } from 'grommet';
 
 import { DownloadOption, Linkedin, StackOverflow, Github, Mail, ContactInfo } from 'grommet-icons';
 
@@ -9,7 +9,9 @@ import avatarPic from '../images/IMG1.png';
 import resume from "../documents/Catalina's Resume.pdf"
 
 import certification from '../documents/certificate.pdf'
-import { Anchor, Affix } from 'antd';
+import { Anchor, Affix, Button } from 'antd';
+
+
 const { Link } = Anchor;
 
 
@@ -24,10 +26,25 @@ function SideBar () {
       
         <Sidebar direction="verticle" gap="large" height="min: '100%'">
 
+        <ResponsiveContext.Consumer>
+      {responsive =>
+        responsive === 'small' ? (
+       <Button 
+
+href="https://www.linkedin.com/in/catalinarwilliams/" 
+
+icon={<Linkedin size="medium" /> }
+
+>
+
+</Button>
+         ) : (
+     
+
             <Nav>
 
                 <Avatar size="large" src={avatarPic} />
-
+                
                 <Anchor>
                     <Link href="#biodiv" title="Biography" />
                     <Link href="#skillsdiv" title="Skills" />
@@ -36,59 +53,50 @@ function SideBar () {
                 </Anchor>
 
                 {/* LINKEDIN PROFILE */}
-                {/* <Tip  dropProps={{ align: { left: 'right' } }} content="LinkedIn Profile">
+                <Tip  dropProps={{ align: { left: 'right' } }} content="LinkedIn Profile">
+                        
+                    <Button 
 
-                    <Anchor 
-                    
-                        icon={
+                        href="https://www.linkedin.com/in/catalinarwilliams/" 
 
-                            <Linkedin size="medium" /> 
+                        icon={<Linkedin size="medium" /> }
 
-                        } 
+                    >
 
-                        href="https://www.linkedin.com/in/catalinarwilliams/"
-
-                     />
-
+                    </Button>
+                
                 </Tip>
 
                 {/* STACK OVERFLOW */}
-                {/* <Tip dropProps={{ align: { left: 'right' } }} content="Stack Overflow Profile"> */}
+                <Tip dropProps={{ align: { left: 'right' } }} content="Stack Overflow Profile">
 
-                    {/* <Anchor  */}
-                    
-                    {/* icon={  */}
+                    <Button 
 
-                        {/* <StackOverflow size="medium" />  */}
+                        href="https://stackoverflow.com/users/11933391/catalina" 
 
-                    {/* }  */}
+                        icon={<StackOverflow size="medium" />}
 
-                    {/* href="https://stackoverflow.com/users/11933391/catalina"   */}
-                    
-                    {/* /> */}
+                    >
 
-                {/* </Tip> */}
+                    </Button>
+             
+
+                </Tip> 
 
                 {/* GITHUB PROFILE */}
-                {/* <Tip dropProps={{ align: { left: 'right' } }} content="Github Profile"> */}
+                <Tip dropProps={{ align: { left: 'right' } }} content="Github Profile"> 
 
-                    {/* <Anchor  */}
+                    <Button 
 
-                        {/* icon={  */}
+                        href="https://github.com/catalinarose1361"  
 
-                            {/* <Github  */}
+                        icon={<Github size="medium" />}
 
-                            {/* size="medium" */}
+                    >
 
-                            {/* />  */}
+                    </Button>
 
-                        {/* }  */}
-
-                        {/* href="https://github.com/catalinarose1361"  */}
-
-                    {/* /> */}
-
-                {/* </Tip> */}
+                </Tip> 
 
                 {/* EMAIL */}
                 {/* <Tip dropProps={{ align: { left: 'right' } }} content="Send Email"> */}
@@ -175,9 +183,12 @@ function SideBar () {
 
                     {/* />    */}
 
-                {/* </Tip> */} */}
+                {/* </Tip> */} 
            
             </Nav>
+                 )
+                        }
+                      </ResponsiveContext.Consumer>
 
         </Sidebar>
         </Affix>
