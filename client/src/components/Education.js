@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 import { Certificate, Book, Briefcase, Close } from 'grommet-icons';
 
-import  {  Heading, Text, DropButton, Box, Card } from 'grommet';
+import  {  Heading, Text, DropButton, Box, Card, Tab, Tabs, Image } from 'grommet';
 
 import {Row, Col, Popover, Button, Divider  } from 'antd';
 
@@ -44,28 +44,34 @@ const Education = () => {
 
             <Row  justify="center">
 
-                <Col>
-                <Popover content={content} trigger="hover" >
-                <Button icon={<Briefcase size="xlarge"/>}/>
-                
-  </Popover>
+            <Tabs height='medium' flex='grow' alignSelf='center'>
+      <Tab title={<Book size="xlarge"/>}>
+        <Box
+          margin='small'
+          pad='small'
+        >
+          <Text>Content for the First Tab</Text>
+        </Box>
+      </Tab>
+      <Tab title={<Certificate size="xlarge" />}>
+        <Box
+          margin='small'
+          pad='small'
+        >
+          <Text>Content for the Second Tab</Text>
 
-                   
-    
-
-                </Col>
-
-                <Col>
-
-                    <Certificate size="xlarge"/>
-
-                </Col>
-
-                <Col>
-
-                    <Book size="xlarge"/>
-
-                </Col>
+        </Box>
+      </Tab>
+      <Tab title={<Briefcase size="xlarge" />}>
+        <Box
+          flex='grow'
+          margin='small'
+          pad='small'
+        >
+          <Image src='//v2.grommet.io/assets/Wilderpeople_Ricky.jpg' />
+        </Box>
+      </Tab>
+    </Tabs>
 
             </Row>
 

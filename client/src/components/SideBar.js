@@ -65,21 +65,6 @@ function SideBar () {
 
 </Tip> 
 
-       {/* STACK OVERFLOW */}
-       <Tip dropProps={{ align: { left: 'right' } }} content="Stack Overflow Profile">
-
-<Button 
-
-    href="https://stackoverflow.com/users/11933391/catalina" 
-
-    icon={<StackOverflow size="medium" />}
-
->
-
-</Button>
-
-
-</Tip> 
 
 {/* GITHUB PROFILE */}
 <Tip dropProps={{ align: { left: 'right' } }} content="Github Profile"> 
