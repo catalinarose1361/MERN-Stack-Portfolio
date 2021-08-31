@@ -6,7 +6,7 @@ import  { Button} from 'grommet'
 
 import { Css3, Heroku, Html5, Js, Mysql, Node, Npm, Next } from 'grommet-icons';
 
-import logo from '../images/logo.jpg';
+// import logo from '../images/logo.jpg';
 
 // THIS PAGE RENDERS AT THE ROOT DIRECTORY "/"
 const TitlePage = () => {
@@ -14,7 +14,7 @@ const TitlePage = () => {
     return (
 
         <>
-            <img
+            {/* <img
 
                 height={1000}
 
@@ -22,7 +22,7 @@ const TitlePage = () => {
 
                 src={logo}
 
-            />
+            /> */}
 
             <Link to="/main">
 

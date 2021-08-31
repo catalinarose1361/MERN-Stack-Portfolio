@@ -4,7 +4,7 @@ import  { Sidebar, Avatar, Nav, Tip, ResponsiveContext, Box } from 'grommet';
 
 import { DownloadOption, Linkedin, StackOverflow, Github, Mail, ContactInfo } from 'grommet-icons';
 
-import avatarPic from '../images/profpic.jpg';
+// import avatarPic from '../images/profpic.jpg';
 
 import resume from "../documents/Catalina's Resume.pdf"
 
@@ -18,7 +18,7 @@ const { Link } = Anchor;
 function SideBar () {
     const [top, setTop] = useState(10);
     const SidebarHeader = () => (
-        <Avatar size="large" src={avatarPic} />
+        <Avatar size="large" src={} />
         );
 
         const MainNavigation = () => (
