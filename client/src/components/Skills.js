@@ -9,7 +9,7 @@ import { Grommet, Stripe } from 'grommet-icons';
 import { AntDesignOutlined } from '@ant-design/icons';
 
 import {Row, Col, Divider, Popover } from 'antd';
-import expressIcon from "../images/expressjs-icon.png"
+// import expressIcon from "../images/expressjs-icon.png"
 const Skills = () => {
 
     const [skills, setSkills] = useState(
@@ -109,12 +109,12 @@ const Skills = () => {
             name: "Git",
             icon: "https://img.icons8.com/color/100/000000/git.png",
             description: "Version Control"
-        },
-        {
-            name: "Express.js",
-            icon: expressIcon,
-            description: "Node.js web application framework"
-        },
+        }
+        // {
+        //     name: "Express.js",
+        //     icon: expressIcon,
+        //     description: "Node.js web application framework"
+        // },
 
    
 

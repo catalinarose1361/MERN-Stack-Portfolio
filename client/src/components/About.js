@@ -7,7 +7,7 @@ import  { Card, Heading, Paragraph, CardFooter, Text, CardHeader, CardBody } fro
 
 import {  Node, Reactjs } from 'grommet-icons';
 
-import profPic from '../images/profpic.jpeg';
+import profPic from '../images/profpic.jpg';
 
 const About = () => {
 

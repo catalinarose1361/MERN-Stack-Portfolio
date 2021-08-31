@@ -4,7 +4,7 @@ import  { Sidebar, Avatar, Nav, Tip, ResponsiveContext, Box } from 'grommet';
 
 import { DownloadOption, Linkedin, StackOverflow, Github, Mail, ContactInfo } from 'grommet-icons';
 
-import avatarPic from '../images/IMG1.png';
+import avatarPic from '../images/profpic.jpg';
 
 import resume from "../documents/Catalina's Resume.pdf"
 
