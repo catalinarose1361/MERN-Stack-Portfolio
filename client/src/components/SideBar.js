@@ -18,7 +18,8 @@ const { Link } = Anchor;
 function SideBar () {
     const [top, setTop] = useState(10);
     const SidebarHeader = () => (
-        <Avatar size="large" src={} />
+        // <Avatar size="large" src={} />
+        "Header"
         );
 
         const MainNavigation = () => (
